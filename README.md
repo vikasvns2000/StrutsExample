@@ -1,6 +1,7 @@
 # StrutsExample
 
 Block listed parameters:
+
 CVE-2006-1546 org.apache.struts.taglib.html.CANCEL=true  and  org.apache.struts.taglib.html.CANCEL.x -> If any of these parameters are present  in request then we should need to log it and throw an exception.
 
 CVE-2014-0114:   If request parameter contains a reference to class as part of its name then log it and throw an exception. Below are few examples of those,
